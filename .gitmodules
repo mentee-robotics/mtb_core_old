@@ -1,0 +1,9 @@
+[submodule "src/mtb_common"]
+	path = src/mtb_common
+	url = git@github.com:mentee-robotics/mtb_common.git
+[submodule "src/mtb_interfaces"]
+	path = src/mtb_interfaces
+	url = git@github.com:mentee-robotics/mtb_interfaces.git
+[submodule "mtb_compose"]
+	path = mtb_compose
+	url = git@github.com:mentee-robotics/mtb_compose.git
