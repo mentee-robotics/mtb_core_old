@@ -12,6 +12,7 @@ RUN apt-get update && \
         apt-get install -y \
         ros-${ROS_DISTRO}-xacro \
         ros-${ROS_DISTRO}-joint-state-publisher \
+        ros-${ROS_DISTRO}-robot-localization\
         ros-${ROS_DISTRO}-rmw-cyclonedds-cpp
 
 
@@ -51,8 +52,8 @@ RUN echo "if [ -f /usr/share/bash-completion/completions/git ]; then source /usr
 
 WORKDIR $WORKSPACE
 ADD . $WORKSPACE/
-
 USER $USERNAME
+
 CMD ["/bin/bash"]
 
 ######################
